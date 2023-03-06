@@ -1,0 +1,15 @@
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    ><url>
+            <loc>https://example.com/tags/docker/</loc><lastmod>2023-03-06T21:16:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/posts/</loc><lastmod>2023-03-06T21:16:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/tags/</loc><lastmod>2023-03-06T21:16:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/</loc><lastmod>2023-03-06T21:16:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/%E7%9B%91%E6%8E%A7%E5%AE%B9%E5%99%A8%E8%B5%84%E6%BA%90%E7%9A%84%E5%8D%A0%E7%94%A8%E6%83%85%E5%86%B5/</loc><lastmod>2023-03-06T21:16:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/about/</loc><lastmod>2023-03-06T20:23:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/categories/</loc><lastmod>2023-03-06T20:23:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/tags/installation/</loc><lastmod>2023-03-06T20:23:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/tags/content/</loc><lastmod>2023-03-06T20:23:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/tags/configuration/</loc><lastmod>2023-03-06T20:23:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://example.com/categories/documentation/</loc><lastmod>2023-03-06T20:23:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>
