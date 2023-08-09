@@ -1,7 +1,7 @@
 ---
 title: "Win10下WSL安装Centos7子系统"
 date: 2023-08-09T22:01:31+08:00
-draft: true
+draft: false
 ---
 
 # 一、控制面板设置
