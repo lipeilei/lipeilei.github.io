@@ -41,6 +41,7 @@ outputs:
 params:
   env: production
   author: lpl
+  hidemeta: true # 是否隐藏文章的元信息，如发布日期、作者等
   defaultTheme: auto
   DateFormat: "2006-01-02"
   ShowReadingTime: true
