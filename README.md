@@ -64,3 +64,4 @@ hugo new theme [name]
 1. HugoLoveIt官方文档：<https://hugoloveit.com/zh-cn/>
 2. <https://hcdtc.github.io/zh/docs/80-team-doc/1-doc-quickstart/2-hugo-quickstart>
 3. Hugo命令: <https://www.gohugo.org/doc/commands/>
+4. 目录放在侧边： <https://blog.csdn.net/Xuyiming564445/article/details/122011603>
