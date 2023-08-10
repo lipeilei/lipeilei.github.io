@@ -26,10 +26,10 @@ menu:
       url: friends/
       weight: 6
 
-# 一页显示5篇文章
-paginate: 5
-# 要表情！
-enableEmoji: true
+paginate: 15    # 首页每页显示的文章数
+enableInlineShortcodes: true
+enableEmoji: true # 允许使用 Emoji 表情，建议 true
+enableRobotsTXT: true # 允许爬虫抓取到搜索引擎，建议 true
 
 outputs:
   home:
@@ -40,14 +40,28 @@ outputs:
 # params底下的应该是PaperMod的设置
 params:
   env: production
+  author: lipeilei
   defaultTheme: auto
+  DateFormat: "2006-01-02"
   ShowReadingTime: true
-  # 刚开始很疑惑为什么我的博文没有像demo站一样在一个框框里，后来发现是第一篇文章有特别的显示设置，把下面这行加上就好啦
-  disableSpecial1stPost: true
+  disableSpecial1stPost: true #博文像demo站一样在一个框框里
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
+  hideFooter: false # 隐藏页脚
+  ShowWordCounts: true
+  VisitCount: true
   ShowToc: true
   TocOpen: true
   comments: true
+
+  fuseOpts:
+    # 比较是否应区分大小写
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]

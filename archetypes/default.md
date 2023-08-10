@@ -1,7 +1,13 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
+lastmod: {{ .Date }}
 draft: false
-TocOpen: true
+categories: 
+- 分类1
+- 分类2
+tags: 
+- 标签1
+- 标签2
 ---
 
