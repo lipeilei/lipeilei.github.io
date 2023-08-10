@@ -50,3 +50,4 @@ params:
   ShowRssButtonInSectionTermList: true
   ShowToc: true
   TocOpen: true
+  comments: true
