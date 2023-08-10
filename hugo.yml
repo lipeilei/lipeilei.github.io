@@ -40,7 +40,7 @@ outputs:
 # params底下的应该是PaperMod的设置
 params:
   env: production
-  author: lipeilei
+  author: lpl
   defaultTheme: auto
   DateFormat: "2006-01-02"
   ShowReadingTime: true
