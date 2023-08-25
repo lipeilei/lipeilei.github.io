@@ -12,3 +12,6 @@ ShowReadingTime: false
 
 # 算法
 1. [结构之法 算法之道](http://blog.csdn.net/v_july_v)
+
+# 性能优化
+1. [高性能无锁数据结构探索-通用EBR框架](https://zhuanlan.zhihu.com/p/600961328)
