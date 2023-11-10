@@ -21,3 +21,5 @@ ShowReadingTime: false
 1. [awesome](https://github.com/sindresorhus/awesome)：一个关于各种有趣话题的精彩列表。这些列表包含了有关各种领域的精选资源，从编程工具到娱乐、学习资源等等。awesome旨在为用户提供一个集中的资源库，帮助他们探索感兴趣的话题，发现新的工具和资源。
 
 2. [开发者成长之路](https://github.com/kamranahmedse/developer-roadmap)：一个为所有开发者提供的成长之路指南，旨在为菜鸟和老鸟提供一条充满乐趣和挑战的发展路径。这个项目将帮助你轻松了解各种技能树和技术路线，使你的职业之旅不再迷茫。无论你是新手还是经验丰富的开发者，这个开源项目都提供了有价值的学习资源和指导，帮助你不断提升技能。
+
+3. [免费的编程中文书籍索引](https://github.com/justjavac/free-programming-books-zh_CN)
