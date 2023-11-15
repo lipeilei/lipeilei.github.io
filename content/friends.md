@@ -13,6 +13,9 @@ ShowReadingTime: false
 # 算法
 1. [结构之法 算法之道](http://blog.csdn.net/v_july_v)
 
+# 数据库
+1. [MySQL 是怎样运行的：从根儿上理解 MySQL](https://relph1119.github.io/mysql-learning-notes)
+
 # 性能优化
 1. [高性能无锁数据结构探索-通用EBR框架](https://zhuanlan.zhihu.com/p/600961328)
 
