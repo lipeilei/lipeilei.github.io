@@ -28,3 +28,5 @@ ShowReadingTime: false
 3. [免费的编程中文书籍索引](https://github.com/justjavac/free-programming-books-zh_CN)
 
 4. [GitHub中文排行榜](https://github.com/GrowingGit/GitHub-Chinese-Top-Charts): 包含了所有计算机编程语言的学习资料。
+
+5. [开发内功修炼](https://github.com/yanfeizhang/coder-kung-fu): 飞哥的开发内功修炼从 CPU、内存、磁盘、网络四大模块进行深度思考，总结出来。
