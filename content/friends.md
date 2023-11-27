@@ -26,3 +26,5 @@ ShowReadingTime: false
 2. [开发者成长之路](https://github.com/kamranahmedse/developer-roadmap)：一个为所有开发者提供的成长之路指南，旨在为菜鸟和老鸟提供一条充满乐趣和挑战的发展路径。这个项目将帮助你轻松了解各种技能树和技术路线，使你的职业之旅不再迷茫。无论你是新手还是经验丰富的开发者，这个开源项目都提供了有价值的学习资源和指导，帮助你不断提升技能。
 
 3. [免费的编程中文书籍索引](https://github.com/justjavac/free-programming-books-zh_CN)
+
+4. [GitHub中文排行榜](https://github.com/GrowingGit/GitHub-Chinese-Top-Charts): 包含了所有计算机编程语言的学习资料。
