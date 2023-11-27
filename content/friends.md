@@ -29,7 +29,7 @@ ShowReadingTime: false
 - 《现代操作系统,原书第4版》 豆瓣评分9.1
 
 ### 2）Linux 内核
-- Linux源代码 评分10分 源码是最好的资料，https://mirrors.edge.kernel.org/pub/linux/kernel/
+- Linux源代码 评分10分 源码是最好的资料， [官网地址](https://www.kernel.org/)，[另一个链接](https://mirrors.edge.kernel.org/pub/linux/kernel/)
 - 《现代体系结构上的 UNIX 系统》 豆瓣评分9.4
 - 《深入理解 Linux 内核（第三版）》 豆瓣评分8.7
 - 《Linux 内核设计与实现(原书第3版)》 豆瓣评分8.6
