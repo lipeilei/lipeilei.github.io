@@ -10,10 +10,10 @@ tags:
 
 ## 1、常见内存问题场景
 
--   **野指针：**指针未初始化就使用(非法的随机值)、指针越界非法访问，或指向一个已释放的对象等。
--   **内存泄露：**申请的堆内存使用完毕后忘记释放，内存还占着，但地址丢失，自己已经不能控制这块内存，而系统也不能再次将它分配给需要的程序。内存泄漏次数多了就会导致内存溢出。
--   **内存溢出：**Out Of Memory，简称OOM，指系统已经不能再分配出你所需要的空间。
--   **内存踩踏：**指访问了不合法的地址（访问了不属于自己的地址），如果访问的地址是其他变量的地址并进行了修改，就会破坏别人的数据，从而导致程序运行异常。常发生在buffer overflow，野指针操作，write after free等场景。
+-   **野指针：** 指针未初始化就使用(非法的随机值)、指针越界非法访问，或指向一个已释放的对象等。
+-   **内存泄露：** 申请的堆内存使用完毕后忘记释放，内存还占着，但地址丢失，自己已经不能控制这块内存，而系统也不能再次将它分配给需要的程序。内存泄漏次数多了就会导致内存溢出。
+-   **内存溢出：** Out Of Memory，简称OOM，指系统已经不能再分配出你所需要的空间。
+-   **内存踩踏：** 指访问了不合法的地址（访问了不属于自己的地址），如果访问的地址是其他变量的地址并进行了修改，就会破坏别人的数据，从而导致程序运行异常。常发生在buffer overflow，野指针操作，write after free等场景。
 
 ## 2、常见内存检测工具
 
@@ -32,14 +32,14 @@ AddressSanitizer即地址消毒技术，简称ASan，是一个快速的内存错
 
 检测类型：
 
--   **Use after free(dangling pointer dereference)：**释放后使用（堆上分配的空间free之后被再次使用）。
--   **Heap buffer overflow：**堆缓冲区溢出（访问的区域在堆上, 且超过了分配的空间）。
--   **Stack buffer overflow：**栈缓冲区溢出（访问的区域在栈上, 且超过了分配给它的空间）。
--   **Global buffer overflow：**全局缓冲区溢出（访问的区域是全局变量, 且超过了分配给它的空间）。
--   **Use after return：**Return后使用（函数在栈上的局部变量在函数返回后被使用默认不开启）。
--   **Use after scope：**在作用域外使用（局部变量离开作用域以后继续使用）。
--   **Initialization order bugs：**初始化顺序错误（检查全局变量或静态变量初始化的时候有没有利用未初始化的变量，默认不开启）。
--   **Memory leaks：**内存泄漏（未释放堆上分配的内存）。
+-   **Use after free(dangling pointer dereference)：** 释放后使用（堆上分配的空间free之后被再次使用）。
+-   **Heap buffer overflow：** 堆缓冲区溢出（访问的区域在堆上, 且超过了分配的空间）。
+-   **Stack buffer overflow：** 栈缓冲区溢出（访问的区域在栈上, 且超过了分配给它的空间）。
+-   **Global buffer overflow：** 全局缓冲区溢出（访问的区域是全局变量, 且超过了分配给它的空间）。
+-   **Use after return：** Return后使用（函数在栈上的局部变量在函数返回后被使用默认不开启）。
+-   **Use after scope：** 在作用域外使用（局部变量离开作用域以后继续使用）。
+-   **Initialization order bugs：** 初始化顺序错误（检查全局变量或静态变量初始化的时候有没有利用未初始化的变量，默认不开启）。
+-   **Memory leaks：** 内存泄漏（未释放堆上分配的内存）。
 
 据谷歌的工程师介绍 ，ASan 已在 chromium 项目上检测出了300多个潜在的未知bug，而且在使用 ASan 作为内存错误检测工具对程序性能损耗也是及其可观的。根据检测结果显示可能导致性能降低2倍左右，比Valgrind（官方给的数据大概是降低10-50倍）快了一个数量级。而且相比于Valgrind只能检查到堆内存的越界访问和悬空指针的访问，ASan 不仅可以检测到堆内存的越界和悬空指针的访问，还能检测到栈和全局对象的越界访问。这也是 ASan 在众多内存检测工具的比较上出类拔萃的重要原因，基本上现在 C/C++ 项目都会使用ASan来保证产品质量，尤其是大项目中更为需要。
 
@@ -72,7 +72,7 @@ ASan主要包括两部分：插桩(Instrumentation)和动态运行库(Run-time l
 
 插桩示例：
 
-```
+```cpp
 // 原始代码：
 void foo() {
   char a[8];
@@ -106,7 +106,7 @@ void foo() {
 
 用-fsanitize=address选项编译和链接你的程序，用-fno-omit-frame-pointer编译，以得到更容易理解stack trace：
 
-```
+```shell
 gcc -Werror-rdynamic-fsanitize=address -fno-omit-frame-pointer -g test.cc -o test
 ```
 
@@ -141,7 +141,7 @@ export ASAN_OPTIONS=halt_on_error=0:detect_leaks=1:malloc_context_size=15:log_pa
 
 下面的代码中，分配array数组并释放，然后返回它的一个元素。
 
-```
+```cpp
 $ vim test_mem.cc
 1 /**
 2  * @filetest_mem.cc
@@ -185,7 +185,7 @@ $ ./build/test_mem
 
 如下代码中，访问的位置超出堆上数组array的边界。
 
-```
+```cpp
 17  // 堆缓冲区溢出
 18  int heap_buffer_overflow(){
 19     int* array = new int[100];
@@ -210,7 +210,7 @@ $ ./build/test_mem
 
 如下代码中，访问的位置超出栈上数组array的边界。
 
-```
+```cpp
 24 // 栈缓冲区溢出
 25 int stack_buffer_overflow(){
 26     int array[100];
@@ -245,10 +245,10 @@ $ ./build/test_mem
 
 下图提示的信息指出：
 
--   **ERROR：**异常类型为global-buffer-overflow全局缓冲区溢出。
--   **READ：**异常操作类型为读，在T0线程，位置在test\_mem.cc:32行。
--   **global variable：**全局缓存块在test\_mem.cc:30行定义。
--   **f9：**f9为Global Redzone防护缓冲毒区，这里被异常访问。
+-   **ERROR：** 异常类型为global-buffer-overflow全局缓冲区溢出。
+-   **READ：** 异常操作类型为读，在T0线程，位置在test\_mem.cc:32行。
+-   **global variable：** 全局缓存块在test\_mem.cc:30行定义。
+-   **f9：** f9为Global Redzone防护缓冲毒区，这里被异常访问。
 
 [![](https://blog.yanjingang.com/wp-content/uploads/2023/03/global-buffer-overflow-1024x500.png)](https://blog.yanjingang.com/wp-content/uploads/2023/03/global-buffer-overflow.png)
 
@@ -298,9 +298,10 @@ ASan也不是万能的，它在打开的情况下对运行性能有明显影响�
 -   实际开发测试过程中通过ASan扫出的常见问题有：多线程下临界资源未加保护导致同时出现读写访问，解决方案一般是对该资源恰当地加锁即可；内存越界，如申请了N字节的内存却向其内存地址拷贝大于N字节的数据，这种情况在没有开启ASan的情况下一般都很难发现。
 -   一些显而易见的访问无效内存操作可能会被编译器优化而会漏报。
 
-yan 3.13
 
-参考：
+
+# 参考：
+
 https://github.com/google/sanitizers/wiki/AddressSanitizerAlgorithm
 
 https://blog.csdn.net/u013171226/article/details/126876335
