@@ -116,3 +116,5 @@ ShowReadingTime: false
 8. [C++那些事](https://github.com/Light-City/CPlusPlusThings): 这是一个适合初学者从入门到进阶的仓库，解决了面试者与学习者想要深入 C++ 及如何入坑 C++ 的问题。除此之外，本仓库拓展了更加深入的源码分析，多线程并发等的知识，是一个比较全面的 C++ 学习从入门到进阶提升的仓库。
 
 9. [Effective Modern C++ 中文翻译版](https://github.com/CnTransGroup/EffectiveModernCppChinese): 《Effective Modern C++》一书的翻译版本为中文读者提供了一份精心翻译的现代 C++ 学习资源，帮助开发者更好地理解和应用现代 C++ 的最佳实践。
+
+10. [系统设计相关](https://github.com/ByteByteGoHq/system-design-101): 一个关于系统设计的开源项目。它的目的是用图像和通俗的话语来解释复杂的系统。以帮助读者更好地理解系统设计的要点。总的来说System Design有如下亮点：1.涵盖了多个系统设计的主题，如通信协议、数据库、缓存、微服务架构等。2.提供了多个系统设计的案例分析，如Netflix、Google等。3.通过丰富的流程图、架构图、代码块、表格等来展示系统的结构和逻辑。
