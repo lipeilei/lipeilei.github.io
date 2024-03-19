@@ -93,6 +93,7 @@ ShowReadingTime: false
 
 # 数据库
 1. [MySQL 是怎样运行的：从根儿上理解 MySQL](https://relph1119.github.io/mysql-learning-notes)
+2. [db-tutorial](https://github.com/dunwu/db-tutorial)：是一个数据库教程。[在线文档](https://dunwu.github.io/db-tutorial/)
 
 # 性能优化
 1. [高性能无锁数据结构探索-通用EBR框架](https://zhuanlan.zhihu.com/p/600961328)
@@ -118,3 +119,5 @@ ShowReadingTime: false
 9. [Effective Modern C++ 中文翻译版](https://github.com/CnTransGroup/EffectiveModernCppChinese): 《Effective Modern C++》一书的翻译版本为中文读者提供了一份精心翻译的现代 C++ 学习资源，帮助开发者更好地理解和应用现代 C++ 的最佳实践。
 
 10. [系统设计相关](https://github.com/ByteByteGoHq/system-design-101): 一个关于系统设计的开源项目。它的目的是用图像和通俗的话语来解释复杂的系统。以帮助读者更好地理解系统设计的要点。总的来说System Design有如下亮点：1.涵盖了多个系统设计的主题，如通信协议、数据库、缓存、微服务架构等。2.提供了多个系统设计的案例分析，如Netflix、Google等。3.通过丰富的流程图、架构图、代码块、表格等来展示系统的结构和逻辑。
+
+11. [Rust语言实战](https://github.com/sunface/rust-by-practice)：该项目提供了大量的 Rust 实战练习，来帮助 Rust 新手学习和上手 Rust 语言。这里除了有大量的练习题和答案，还支持在线阅读、修改和编译 Rust 代码。[在线阅读](https://practice-zh.course.rs/why-exercise.html)
