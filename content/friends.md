@@ -75,6 +75,12 @@ ShowReadingTime: false
 - 《Go 语言设计与实现》 评分9.8
 - 《Go 专家编程》 豆瓣评分9.4
 
+### 5）Rust
+- [Rust语言圣经](https://course.rs/about-book.html): [仓库地址](https://github.com/sunface/rust-course)
+- [Rust程序设计语言](https://kaisery.github.io/trpl-zh-cn): [仓库地址](https://github.com/KaiserY/trpl-zh-cn)
+- [Rust秘典](https://nomicon.purewhite.io/): [仓库地址](https://github.com/rust-lang-cn/nomicon-zh-Hans)
+- [Awesome Rust](https://github.com/rust-boom/rust-boom)
+
 ## 五、性能分析与调优
 - 《性能之巅 洞悉系统、企业与云计算》 豆瓣评分8.6 至少9分以上
 - 《BPF之巅 洞悉Linux系统和应用性能》 豆瓣评分8.5 
