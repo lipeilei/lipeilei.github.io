@@ -30,7 +30,16 @@
   </sup></h2>
   {{- range .Pages.GroupByDate "January" }}
   <div class="archive-month">
-    <h3 class="archive-month-header">{{- .Key }}<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup></h3>
+    <h3 class="archive-month-header">{{- .Key }}<sup class="archive-count">&nbsp;&nbsp;
+      {{- $visibleCount := 0 -}}
+      {{- range .Pages }}
+        {{- if not .Params.hidden }}
+          {{- $visibleCount = add $visibleCount 1 -}}
+        {{- end }}
+      {{- end -}}
+      {{- $visibleCount }}
+    </sup></h3>
+
     <div class="archive-posts">
       {{- range .Pages }}
       {{- if not .Params.hidden }} <!-- 隐藏 -->
