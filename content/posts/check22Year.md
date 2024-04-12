@@ -1,12 +1,12 @@
 ---
-title: "22YearCheck"
+title: "22年体检信息"
 date: 2024-04-12T23:16:00+08:00
 lastmod: 2024-04-12T23:16:00+08:00
 draft: false
 
 hidden: true # hide everywhere but not in structured data
 hiddenInList: true # hide on list pages and home
-
+hiddenInSingle: true # hide on single page
 ---
 
 体检信息
