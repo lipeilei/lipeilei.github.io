@@ -100,6 +100,7 @@ ShowReadingTime: false
 # 数据库
 1. [MySQL 是怎样运行的：从根儿上理解 MySQL](https://relph1119.github.io/mysql-learning-notes)
 2. [db-tutorial](https://github.com/dunwu/db-tutorial)：是一个数据库教程。[在线文档](https://dunwu.github.io/db-tutorial/)
+3. [miniob](https://github.com/oceanbase/miniob): 从 0 到 1 数据库内核实战教程。该项目是 OceanBase 团队基于华中科技大学数据库课程原型，联合多所高校重新开发的、从零上手数据库的学习项目。它结构简单、代码简洁，不仅有文字讲解和视频教程，还有由浅入深的题目。通过理论+实战的方式，帮忙初学者迅速掌握内核模块功能和协同关系，提高工程编码能力，有助于在面试和工作中脱颖而出。
 
 # 性能优化
 1. [高性能无锁数据结构探索-通用EBR框架](https://zhuanlan.zhihu.com/p/600961328)
